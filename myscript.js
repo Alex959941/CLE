@@ -266,6 +266,8 @@ const displayQuizResult = () => {
     if (timerInterval) {
         clearInterval(timerInterval);
     }
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
     quizResult.style.display = "flex";
     quizContainer.style.display = "none";
     quizResult.innerHTML = "";
